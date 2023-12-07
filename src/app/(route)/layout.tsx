@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "../styles/globals.css";
+import React from 'react';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import '../styles/globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "nextjs-13-playgound2",
-  description: "my sendbox for code test",
+  title: 'nextjs-13-playgound2',
+  description: 'my sendbox for code test',
 };
 
 export default function RootLayout({

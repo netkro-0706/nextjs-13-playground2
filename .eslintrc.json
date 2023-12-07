@@ -1,3 +1,43 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended", // @typescript-eslint @v5
+    "plugin:@typescript-eslint/recommended-requiring-type-checking" // @typescript-eslint @v5
+  ],
+  "plugins": [
+    "import",
+    "jsx-a11y",
+    "react",
+    "react-hooks",
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/next.config.js", //nextjs config
+          "test/**", // tape, common npm pattern
+          "tests/**", // also common npm pattern
+          "spec/**", // mocha, rspec-like pattern
+          "**/__tests__/**", // jest pattern
+          "test.js", // repos with a single test file
+          "test-*.js", // repos with multiple top-level test files
+          "**/*.test.js", // tests where the extension denotes that it is a test
+          "**/webpack.config.js", // webpack config
+          "**/webpack.config.*.js", // webpack config
+          "**/rollup.config.js", // rollup config
+          "**/gulpfile.js", // gulp config
+          "**/Gruntfile" // grunt config
+        ],
+        "peerDependencies": false,
+        "optionalDependencies": false
+      }
+    ]
+  }
 }
