@@ -33,11 +33,13 @@
           "**/webpack.config.*.js", // webpack config
           "**/rollup.config.js", // rollup config
           "**/gulpfile.js", // gulp config
-          "**/Gruntfile" // grunt config
+          "**/Gruntfile", // grunt config
+          "**/*.css.ts"
         ],
         "peerDependencies": false,
         "optionalDependencies": false
       }
     ]
+    // "import/prefer-default-export": "off" //when export error
   }
 }
