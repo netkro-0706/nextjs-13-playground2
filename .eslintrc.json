@@ -34,12 +34,13 @@
           "**/rollup.config.js", // rollup config
           "**/gulpfile.js", // gulp config
           "**/Gruntfile", // grunt config
-          "**/*.css.ts"
+          "**/*.css.ts" //vanilla-extract.style
         ],
         "peerDependencies": false,
         "optionalDependencies": false
       }
-    ]
+    ],
+    "import/extensions": "never"
     // "import/prefer-default-export": "off" //when export error
   }
 }
