@@ -1,10 +1,10 @@
-import Carousel from '@/app/components/primitives/carousel/page';
 import { CarouselPageWrapper } from './style.css';
+import CarouselBlock from '@/app/components/block/carousel/page';
 
 function CarouselPage() {
   return (
     <div className={CarouselPageWrapper}>
-      <Carousel />
+      <CarouselBlock />
     </div>
   );
 }
