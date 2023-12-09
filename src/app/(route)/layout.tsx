@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '../styles/globals.css';
 import Link from 'next/link';
+import Provider from '../components/provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Link href="./carousel">Link</Link>
-        {children}
+        <Provider>
+          <Link href="./carousel">Link</Link>
+          {children}
+        </Provider>
       </body>
     </html>
   );
