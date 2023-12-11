@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const API_KEY: string = process.env.YOUTUBE_API_KEY as string;
+const API_KEY: string = process.env.NEXT_PUBLIC_API_KEY as string;
 const API_URL = `https://www.googleapis.com/youtube/v3/playlistItems`;
 
 export async function GET() {
@@ -14,5 +14,5 @@ export async function GET() {
 
   const result = await res.json();
 
-  return NextResponse.json(result);
+  return result;
 }
