@@ -1,5 +1,5 @@
 import { CarouselPageWrapper } from './style.css';
-import CarouselBlock from '@/app/components/block/carousel/page';
+import CarouselBlock from '@/app/components/blocks/carousel/page';
 
 function CarouselPage() {
   return (
