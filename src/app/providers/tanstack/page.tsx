@@ -1,5 +1,9 @@
 'use client';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import {
+  QueryClient,
+  QueryClientProvider,
+  QueryErrorResetBoundary,
+} from '@tanstack/react-query';
 import React from 'react';
 
 export default function TanstackProvider({
@@ -9,6 +13,8 @@ export default function TanstackProvider({
 }) {
   const [queryClient] = React.useState(() => new QueryClient());
   return (
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <QueryErrorResetBoundary>{children}</QueryErrorResetBoundary>
+    </QueryClientProvider>
   );
 }
