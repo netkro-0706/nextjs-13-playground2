@@ -5,7 +5,13 @@ export const CarouselWrapper = style({
 });
 
 export const CarouselPackage = style({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  minHeight: 300,
   border: '1px solid blue',
   padding: 0,
   backgroundColor: 'lightblue',
+  overflowX: 'auto',
+  whiteSpace: 'nowrap',
 });
