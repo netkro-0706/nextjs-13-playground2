@@ -1,4 +1,4 @@
-type GetYoutubeType = {
+export type GetYoutubeType = {
   kind: string;
   etag: string;
   nextPageToken: string;
