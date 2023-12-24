@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "api-codegen": "openapi-typescript api-spec/api.yaml --output api-spec/schema/generated/schema.gen.ts",
+    "api-mock": "nodemon --watch api-mock --exec 'ts-node -P ./tsconfig.api-mock.json' ./api-mock/app.ts "
   },
   "type": "module",
   "dependencies": {
