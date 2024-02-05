@@ -22,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Provider>
           <Link href="./carousel">Link</Link>
+          <Link href="./calendar">Calendar</Link>
           {children}
         </Provider>
       </body>
